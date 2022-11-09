@@ -1,0 +1,191 @@
+/* Generales */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.blue{
+    background-color: aquamarine;
+}
+
+/* Carrousel */
+
+.header{
+    height: 400px;
+    img{
+        height: 400px;
+    }
+}
+
+@media all and (min-width:810px) {
+    .header{
+        height: 500px;
+        img{
+            height: 500px;
+        }
+    }
+}
+
+
+/* Sección productos */
+
+.section_products {
+    padding: 0px 10px 0 10px;
+    .card_products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        background-image: url("../assets/fotoejemplo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+
+        h1 {
+            font-weight: 800;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+
+    .card_products:hover {
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        opacity: 1;
+        transform: scale(0.95 , 0.95);
+        transition: 1s;
+    }
+}
+
+
+
+/* Detalle de los productos */
+
+.section_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Title */
+
+    .header_details{
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 2.6rem;
+    }
+
+    div {
+        margin-top: 20px;
+    }
+
+    /* Products */
+
+.container_product{
+    .product_detail{
+        .container_text{
+            padding: 10px;
+            h2{
+                font-weight: 600;
+                font-size: 1.8rem;
+                margin-top: 10px;
+            }
+            p{
+                font-weight:500;
+            } 
+        }
+       img{
+            height: 320px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+       }
+    }
+}
+
+}
+
+/* Acordeón */
+
+
+/* Prefooter */
+
+.container_prefooter{
+    div{
+        padding: 0 10px 0 10px;
+        .title_prefooter{
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .container_img{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0 25px 0;
+
+        img{
+            height: 60px;
+        }
+    }
+    
+}
+
+/* Footer */
+
+
+.container_footer{
+    width: 100%;
+    .header_footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        margin-top: 8px;
+
+        img{
+            height: 95px;
+        }
+        
+        .text_footer{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+    }
+    .contenedor_footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 8px;
+        .body_footer{
+            p{
+                b{
+                    font-size: 0.9rem;
+                 }
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
