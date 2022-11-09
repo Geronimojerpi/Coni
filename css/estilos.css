@@ -9,6 +9,24 @@
   background-color: aquamarine;
 }
 
+/* Navbar */
+nav ul {
+  font-weight: 600;
+}
+
+@media all and (min-width: 1378px) {
+  nav ul {
+    margin-left: 70%;
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  nav ul {
+    margin-left: 77%;
+  }
+}
+
 /* Carrousel */
 .header {
   height: 400px;
@@ -18,7 +36,7 @@
   height: 400px;
 }
 
-@media all and (min-width: 810px) {
+@media all and (min-width: 1378px) {
   .header {
     height: 500px;
   }
@@ -73,6 +91,43 @@
   font-size: 2.2rem;
 }
 
+@media all and (min-width: 800px) {
+  .section_products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section_products .card_products {
+    width: 300px;
+    height: 300px;
+  }
+  .section_products .card_products h1 {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .section_products .card_products {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .section_products {
+    max-width: 1750px;
+    margin-left: 85px;
+  }
+  .section_products .card_products {
+    width: 450px;
+    height: 400px;
+  }
+}
+
 /* Detalle de los productos */
 .section_details {
   display: -webkit-box;
@@ -88,8 +143,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Title */
-  /* Products */
 }
 
 .section_details .header_details {
@@ -112,17 +165,17 @@
   padding: 10px;
 }
 
-.section_details .container_product .product_detail .container_text h2 {
+.section_details .container_product .product_detail .container_text .container_parrafos h2 {
   font-weight: 600;
   font-size: 1.8rem;
   margin-top: 10px;
 }
 
-.section_details .container_product .product_detail .container_text p {
+.section_details .container_product .product_detail .container_text .container_parrafos p {
   font-weight: 500;
 }
 
-.section_details .container_product .product_detail img {
+.section_details .container_product .product_detail .container_text img {
   height: 320px;
   width: 100%;
   padding: 10px;
@@ -130,6 +183,11 @@
 }
 
 /* Acordeón */
+.accordion h1 {
+  text-align: center;
+  margin-top: 5px;
+}
+
 /* Prefooter */
 .container_prefooter div {
   padding: 0 10px 0 10px;
@@ -165,9 +223,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   padding: 0 10px 0 10px;
   -webkit-box-sizing: border-box;
