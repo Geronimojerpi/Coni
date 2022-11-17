@@ -34,7 +34,7 @@ nav {
 
     img {
         width: 280px;
-        height: 60px;
+        height: 50px;
     }
 
     ul {
@@ -48,7 +48,7 @@ nav {
 
         img {
             width: 500px;
-            height: 100px;
+            height: 75px;
         }
 
         ul {
@@ -64,10 +64,21 @@ nav {
     nav {
         img {
             width: 700px;
+            height: 75px;
+        }
+    }
+}
+
+@media all and (min-width:1920px) {
+    nav {
+        img {
+            width: 700px;
             height: 100px;
         }
     }
 }
+
+
 
 
 
